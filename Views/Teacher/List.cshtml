@@ -1,0 +1,11 @@
+﻿@model IEnumerable<schoolProject.Models.Teacher>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach(var teacher in Model)
+{
+    <div>@teacher.teacherid-@teacher.teacherfname,@teacher.teacherlname,@teacher.teacherlname, (@teacher.salary) ,@teacher.hiredate,@teacher.employeenumber</div>
+}
+
