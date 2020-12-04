@@ -4,8 +4,14 @@
 }
 
 <h2>List</h2>
+<form actions="/Teacher/List" method="Get" />
+ <input type="text" name="search" />
+<input type="button" value="Search Teacher" />
+
+</form>
 @foreach(var teacher in Model)
 {
-    <div>@teacher.teacherid-@teacher.teacherfname,@teacher.teacherlname,@teacher.teacherlname, (@teacher.salary) ,@teacher.hiredate,@teacher.employeenumber</div>
+    
+    <div class="information"><a href="/Teacher/ShowforDelet/@teacher.teacherid">@teacher.teacherfname,@teacher.teacherlname,@teacher.teacherlname, (@teacher.salary) ,@teacher.hiredate,@teacher.employeenumber</a></div>
 }
 

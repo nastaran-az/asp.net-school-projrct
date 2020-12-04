@@ -1,0 +1,17 @@
+﻿@Model schoolProject.Models.Teacher
+
+
+@{
+    ViewBag.Title = "Deletconfirmation";
+}
+
+<a class="navlink" style="float:left; text-decoration:underline; color:blue; margin-top:3%" href="/Teacher/List">Cancel</a>
+
+<h2 style="margin-top:5%">Are you sure you want to delet @Model.teacherfname  @Model.teacherlname?</h2>
+<div id="containerlink">
+    <form action="/Teacher/Delete/@Model.teacherid" method="post">
+        
+        <button  style="margin:0 auto;color:red;border-radius:3px " href="/Teacher/DeletConfirm/@Model.teacherid">Confirm</button>
+    </form>
+
+</div>

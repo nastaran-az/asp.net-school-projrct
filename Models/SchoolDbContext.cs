@@ -5,6 +5,7 @@ using System.Web;
 using MySql.Data.MySqlClient;
 
 
+
 namespace schoolProject.Models
 {
     public class SchoolDbContext

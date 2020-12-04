@@ -1,12 +1,21 @@
-﻿
-@{
-    ViewBag.Title = "Show";
-}
+﻿@Model  schoolProject.Models.Teacher
+    @{
+        ViewBag.Title = "Teacher information";
+    }
+    <h2>About Teacher</h2>
+    <div>
+        <form action="/Teacher/Show" method="Get">
+            <input type="text" name="id" />
+            <input type="submit" value="display" />
+        </form>
+    </div>
+    
+    <div>
+        <h2>@Model.teacherfname  @Model.teacherlname</h2>
 
-<h2>About Teacher</h2>
-<div>
-    <h2>@Model.teacherfname  @Model.teacherlname</h2>
-    <p>@Model.employeenumber @Model.hiredate @Model.salary</p>
- </div>
+        <p>@Model.employeenumber</p>
+        <p>@Model.hiredate</p>
+        <p>@Model.salary</p>
+    </div>
 
 

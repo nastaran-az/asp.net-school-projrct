@@ -1,0 +1,17 @@
+﻿
+.information {
+    margin: 10px 0;
+}
+
+.navlink {
+    float: right;
+}
+
+.deletlink {
+    float: left;
+    color: red;
+}
+
+nav {
+    overflow: hidden;
+}

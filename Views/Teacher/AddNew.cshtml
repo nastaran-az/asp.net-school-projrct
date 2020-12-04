@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "AddNew";
+}
+
+<nav style=" float: left margin: 10px auto">
+    <a href="/Teacher/List">Back To Teacher</a>
+</nav>
+
+
+<div style=" width: 80%; margin: 0 auto; margin-top: 80px">
+
+
+    <form method="POST" action="/Teacher/Create">
+        <div style="margin-bottom:15px;width:40%;overflow:hidden">
+
+            <label for="teacherfname">First Name:</label>
+            <input type="text" id="teacherfname" name="teacherfname" />
+
+        </div>
+        <div style="margin-bottom:15px;width:40%;overflow:hidden">
+            <label for="teacherlname">Last Name:</label>
+            <input type="text" id="teacherlname" name="teacherlname" />
+
+        </div>
+        <div style="margin-bottom:15px;width:40%;overflow:hidden">
+            <label for="salary">Salary:</label>
+            <input type="text" id="salary" name="salary" />
+        </div>
+        <div style="margin-bottom:15px;width:40%;overflow:hidden">
+            <label for="hiredate">Hire Date:</label>
+            <div>
+                <textarea id="hiredate" name="hiredate"></textarea>
+            </div>
+        </div>
+        <div style="margin-bottom:15px;width:40%;overflow:hidden">
+            <label for="employeeenumber">Employee Number</label>
+            <div>
+                <textarea id="employeeenumber" name="employeeenumber"></textarea>
+            </div>
+        </div>
+        <div style="margin-bottom:15px;width:40%;overflow:hidden">
+            <input type="submit" value="Add" />
+        </div>
+    </form>
+</div>
